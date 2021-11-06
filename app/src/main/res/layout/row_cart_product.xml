@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="16dp"
+android:elevation="4dp"
+app:cardCornerRadius="5dp"
+app:cardUseCompatPadding="true">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv_product"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <!--Grid Layout-->
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_product"
+        android:textColor="@color/theme_light_blue"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_product"
+        android:layout_below="@+id/tv_product_name"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/theme_light_orange"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_centerHorizontal="true" />
+
+    <!--        Verticle Cards Layout-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_product_name"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:layout_toRightOf="@+id/iv_product"-->
+    <!--            android:text="This is Header Text"-->
+    <!--            android:textColor="#000"-->
+    <!--            android:textSize="25dp"-->
+    <!--            android:textStyle="bold" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_product_price"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@+id/tv_product_name"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:layout_toRightOf="@+id/iv_product"-->
+    <!--            android:text="This is Description Text"-->
+    <!--            android:textSize="20dp" />-->
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

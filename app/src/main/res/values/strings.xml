@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cake shop Android</string>
+    !--to toggle the open close button
+    of the navigation drawer-->
+    <string name="string_nav_open">Open</string>
+    <string name="string_nav_close">Close</string>
+</resources>

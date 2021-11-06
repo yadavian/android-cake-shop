@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/font/poppins.xml" value="0.3927083333333333" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/activity_address.xml" value="0.25" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/activity_cart.xml" value="0.25" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/activity_drawable_menu.xml" value="0.35688405797101447" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/activity_forgot_password.xml" value="0.25" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/activity_login.xml" value="0.10655737704918032" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/activity_order_summary.xml" value="0.25" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/activity_product_detail.xml" value="0.25" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/activity_your_order.xml" value="0.25" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/nav_header.xml" value="0.25" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/row_cart_product.xml" value="0.2359375" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/row_categories.xml" value="0.3625" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/row_priduct_list.xml" value="0.2" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/layout/row_your_order.xml" value="0.1" />
+        <entry key="..\:/Users/ANKIT/Projects/android/CakeshopAndroid/app/src/main/res/menu/drawer_menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

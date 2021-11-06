@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <!--Grid Layout-->
+        <TextView
+            android:id="@+id/tv_order_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/theme_light_blue"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:id="@+id/tv_total_prize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_delivery_date"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/theme_light_orange"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_delivery_date"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/theme_light_orange"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

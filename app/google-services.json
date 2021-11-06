@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "359476874399",
+    "project_id": "cake-shop-android-517a7",
+    "storage_bucket": "cake-shop-android-517a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359476874399:android:cd00e91e89fc95e887a6aa",
+        "android_client_info": {
+          "package_name": "com.vesit.cakeshopandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359476874399-f0dsdegiplpgolfqt9ppu9hm82l9nip1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPqP83Xp9l67fGGuvQOn-kAbRvWBlyPUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359476874399-f0dsdegiplpgolfqt9ppu9hm82l9nip1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
