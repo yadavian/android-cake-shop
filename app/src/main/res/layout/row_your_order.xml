@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
 
 
     <RelativeLayout
@@ -26,7 +31,7 @@
             android:id="@+id/tv_total_prize"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_delivery_date"
+            android:layout_below="@+id/tv_order_date"
             android:layout_marginLeft="10dp"
             android:textSize="14sp"
             android:textColor="@color/theme_light_orange"
@@ -38,12 +43,12 @@
             android:id="@+id/tv_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_delivery_date"
+            android:layout_below="@+id/tv_total_prize"
+            android:layout_centerHorizontal="true"
             android:layout_marginLeft="10dp"
-            android:textSize="14sp"
-            android:textColor="@color/theme_light_orange"
             android:fontFamily="@font/poppins_bold"
-            android:layout_centerHorizontal="true" />
+            android:textColor="@color/theme_light_orange"
+            android:textSize="14sp" />
 
 
     </RelativeLayout>

@@ -99,15 +99,15 @@ public class OrderSummaryActivity extends AppCompatActivity {
         dataMap.put("orderDate", todayDate);
         dataMap.put("orderPrize", totalPrize);
 
-        HashMap<String, HashMap> finalData = new HashMap<>();
-        finalData.put("order", dataMap);
+//        HashMap<String, HashMap> finalData = new HashMap<>();
+//        finalData.put("order", dataMap);
 
 
         btn_final_order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                db.collection("orders").document().set(finalData).addOnCompleteListener(new OnCompleteListener<Void>() {
+                db.collection("orders").document().set(dataMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
