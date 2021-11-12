@@ -18,6 +18,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.vesit.cakeshopandroid.R;
 import com.vesit.cakeshopandroid.model.UserModel;
@@ -121,14 +122,15 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
-                                Toast.makeText(RegisterActivity.this, "User Registered !  ", Toast.LENGTH_LONG).show();
+                                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                                user.sendEmailVerification();
+                                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                                Toast.makeText(RegisterActivity.this, "Please Verify your Email, Then Login. !", Toast.LENGTH_LONG).show();
+                                progressBar.setVisibility(View.GONE);
                             }
                         }
                     });
 
-                    Toast.makeText(RegisterActivity.this, "Please Verify your Email, Then Login. !", Toast.LENGTH_LONG).show();
-                    progressBar.setVisibility(View.GONE);
-                    startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
                 } else {
                     Toast.makeText(RegisterActivity.this, "Failed to  Register, Try Again !", Toast.LENGTH_LONG).show();
                     progressBar.setVisibility(View.GONE);
