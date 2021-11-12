@@ -59,6 +59,7 @@ public class OrderSummaryActivity extends AppCompatActivity {
 
         SharedPreferences sharedPreferences = getSharedPreferences("data", MODE_PRIVATE);
         String fetchedSpProductList = sharedPreferences.getString("spProductList", "");
+        String userId = sharedPreferences.getString("userId", "");
         String totalPrize = sharedPreferences.getString("totalPrize", "");
         tv_total_prize.setText("TOTAL PRICE :  ₹ " + totalPrize);
 
@@ -98,6 +99,7 @@ public class OrderSummaryActivity extends AppCompatActivity {
         dataMap.put("address", fullAddress);
         dataMap.put("orderDate", todayDate);
         dataMap.put("orderPrize", totalPrize);
+        dataMap.put("userId", userId);
 
 //        HashMap<String, HashMap> finalData = new HashMap<>();
 //        finalData.put("order", dataMap);

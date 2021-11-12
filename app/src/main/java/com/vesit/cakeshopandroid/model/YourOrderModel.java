@@ -8,15 +8,17 @@ public class YourOrderModel {
     String address;
     String orderDate;
     String orderPrize;
+    String userId;
     ArrayList<HashMap<String,Object>> products;
 
     public YourOrderModel() {
     }
 
-    public YourOrderModel(String address, String orderDate, String orderPrize, ArrayList<HashMap<String, Object>> products) {
+    public YourOrderModel(String address, String orderDate, String orderPrize, String userId, ArrayList<HashMap<String, Object>> products) {
         this.address = address;
         this.orderDate = orderDate;
         this.orderPrize = orderPrize;
+        this.userId = userId;
         this.products = products;
     }
 
@@ -44,6 +46,14 @@ public class YourOrderModel {
         this.orderPrize = orderPrize;
     }
 
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
     public ArrayList<HashMap<String, Object>> getProducts() {
         return products;
     }
@@ -52,12 +62,14 @@ public class YourOrderModel {
         this.products = products;
     }
 
+
     @Override
     public String toString() {
         return "YourOrderModel{" +
                 "address='" + address + '\'' +
                 ", orderDate='" + orderDate + '\'' +
                 ", orderPrize='" + orderPrize + '\'' +
+                ", userId='" + userId + '\'' +
                 ", products=" + products +
                 '}';
     }

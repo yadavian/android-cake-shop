@@ -171,11 +171,17 @@ public class HomeActivity extends AppCompatActivity {
                             Log.d("HomeScreen :", ">>" + "onNavigationItemSelected Clicked");
                             startActivity(new Intent(HomeActivity.this, YourOrderActivity.class));
 
+                        }else if (id == R.id.nav_profile) {
+                            Log.d("HomeScreen :", ">>" + "onNavigationItemSelected Clicked");
+                            startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
+
                         } else if (id == R.id.nav_logout) {
                             FirebaseAuth.getInstance().signOut();
                             sharedPreferences.edit().remove("spProductList").commit();
                             sharedPreferences.edit().remove("totalPrize").commit();
                             sharedPreferences.edit().remove("userId").commit();
+                            sharedPreferences.edit().remove("data").commit();
+//                            sharedPreferences.edit().clear().commit();
                             startActivity(new Intent(HomeActivity.this,LoginActivity.class));
                             Toast.makeText(HomeActivity.this, "You have loggged Out !!", Toast.LENGTH_LONG).show();
                         }

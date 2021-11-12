@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CakeShopAndroid"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".activity.user.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.user.YourOrderActivity"
             android:exported="false" />
         <activity
